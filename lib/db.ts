@@ -50,6 +50,13 @@ export function getDb(): Database.Database {
       payment_method TEXT NOT NULL DEFAULT 'email',
       status TEXT NOT NULL DEFAULT 'pending'
     );
+
+    CREATE TABLE IF NOT EXISTS subscribers (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      created_at TEXT NOT NULL DEFAULT (datetime('now')),
+      email TEXT NOT NULL UNIQUE,
+      source TEXT
+    );
   `);
   return db;
 }

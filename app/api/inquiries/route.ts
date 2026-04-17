@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { z } from "zod";
 import { getDb } from "@/lib/db";
+import { clientKey, rateLimit } from "@/lib/rate-limit";
 
 export const runtime = "nodejs";
 
@@ -14,9 +15,18 @@ const schema = z.object({
   subject: z.string().trim().max(200).optional().or(z.literal("")),
   message: z.string().trim().min(1, "Message is required").max(4000),
   meta: z.record(z.string()).optional(),
+  website: z.string().max(0).optional().or(z.literal("")), // honeypot
 });
 
 export async function POST(req: Request) {
+  const rl = rateLimit(`inq:${clientKey(req)}`, 5, 60_000);
+  if (!rl.allowed) {
+    return NextResponse.json(
+      { error: "Too many requests. Please wait a moment and try again." },
+      { status: 429, headers: { "Retry-After": String(rl.retryAfter) } },
+    );
+  }
+
   let body: unknown;
   try {
     body = await req.json();
@@ -33,6 +43,10 @@ export async function POST(req: Request) {
   }
 
   const data = parsed.data;
+  if (data.website && data.website.length > 0) {
+    // Silently accept and discard honeypot hits.
+    return NextResponse.json({ id: 0 }, { status: 201 });
+  }
   const db = getDb();
   const stmt = db.prepare(`
     INSERT INTO inquiries (type, name, email, phone, company, city, subject, message, meta)

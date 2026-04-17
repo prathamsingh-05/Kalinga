@@ -28,6 +28,7 @@ export function InquiryForm({ initialType }: Props) {
     city: "",
     subject: "",
     message: "",
+    website: "", // honeypot
     // retailer
     store_type: "",
     outlets: "",
@@ -79,6 +80,7 @@ export function InquiryForm({ initialType }: Props) {
           city: form.city,
           subject: form.subject,
           message: form.message,
+          website: form.website,
           meta,
         }),
       });
@@ -93,6 +95,7 @@ export function InquiryForm({ initialType }: Props) {
         city: "",
         subject: "",
         message: "",
+        website: "",
         store_type: "",
         outlets: "",
         office_size: "",
@@ -126,6 +129,16 @@ export function InquiryForm({ initialType }: Props) {
 
   return (
     <form onSubmit={submit} className="space-y-10">
+      {/* Honeypot */}
+      <input
+        type="text"
+        tabIndex={-1}
+        autoComplete="off"
+        value={form.website}
+        onChange={(e) => setForm({ ...form, website: e.target.value })}
+        className="hidden"
+        aria-hidden
+      />
       {/* Type selector */}
       <section className="card p-6 md:p-10">
         <div className="label">01 · What brings you here?</div>

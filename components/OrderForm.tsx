@@ -29,6 +29,7 @@ export function OrderForm({ initialFlavor }: Props) {
     pincode: "",
     country: "India",
     notes: "",
+    website: "", // honeypot
     payment_method: "email" as "email" | "razorpay",
   });
 
@@ -90,6 +91,7 @@ export function OrderForm({ initialFlavor }: Props) {
         pincode: "",
         country: "India",
         notes: "",
+        website: "",
         payment_method: "email",
       });
       setQty({});
@@ -120,6 +122,16 @@ export function OrderForm({ initialFlavor }: Props) {
 
   return (
     <form onSubmit={submit} className="space-y-12">
+      {/* Honeypot */}
+      <input
+        type="text"
+        tabIndex={-1}
+        autoComplete="off"
+        value={form.website}
+        onChange={(e) => setForm({ ...form, website: e.target.value })}
+        className="hidden"
+        aria-hidden
+      />
       {/* Jars */}
       <section className="card p-6 md:p-10">
         <div className="label">01 · Choose your jars</div>

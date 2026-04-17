@@ -9,7 +9,9 @@ const LINKS = [
   { href: "/catalog", label: "Catalog" },
   { href: "/order", label: "Order" },
   { href: "/health", label: "Health" },
+  { href: "/reviews", label: "Reviews" },
   { href: "/socials", label: "Socials" },
+  { href: "/faq", label: "FAQ" },
   { href: "/contact", label: "Contact" },
 ];
 

@@ -106,6 +106,23 @@ export default function Home() {
           ))}
         </div>
       </section>
+
+      <div className="hairline" />
+
+      {/* Reviews teaser */}
+      <section className="max-w-5xl mx-auto px-6 lg:px-10 py-20 text-center">
+        <div className="label">Reviews</div>
+        <h2 className="font-display text-4xl md:text-5xl text-cream mt-3">
+          What our early customers think.
+        </h2>
+        <p className="mt-4 text-cream/70 max-w-2xl mx-auto">
+          This page will be updated after our first 50 orders — so we only
+          show real words from real customers.
+        </p>
+        <div className="mt-8">
+          <Link href="/reviews" className="btn btn-ghost">Reviews page</Link>
+        </div>
+      </section>
     </div>
   );
 }
