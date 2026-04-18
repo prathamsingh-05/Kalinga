@@ -27,6 +27,11 @@ export const metadata: Metadata = {
   title: "Kalinga Honey — Naturally Sourced from Odisha",
   description:
     "Raw, single-origin honey from the forests of Odisha. No preservatives. No additives. Harvested with tribal self-help groups.",
+  robots: {
+    index: false,
+    follow: false,
+    googleBot: { index: false, follow: false },
+  },
   openGraph: {
     title: "Kalinga Honey",
     description:

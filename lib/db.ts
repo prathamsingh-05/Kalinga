@@ -6,9 +6,16 @@ let db: Database.Database | null = null;
 
 function getDbPath(): string {
   const configured = process.env.DATABASE_PATH;
+  const isServerless =
+    !!process.env.NETLIFY ||
+    !!process.env.AWS_LAMBDA_FUNCTION_NAME ||
+    !!process.env.VERCEL;
+  const fallback = isServerless
+    ? "/tmp/kalinga.db"
+    : path.resolve(process.cwd(), "data", "kalinga.db");
   const resolved = configured
     ? path.resolve(process.cwd(), configured)
-    : path.resolve(process.cwd(), "data", "kalinga.db");
+    : fallback;
   const dir = path.dirname(resolved);
   if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
   return resolved;
