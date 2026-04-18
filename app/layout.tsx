@@ -9,9 +9,8 @@ import { Footer } from "@/components/Footer";
 // Swap the two imports below if the final exact fonts are confirmed.
 const display = Fraunces({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
   style: ["normal", "italic"],
-  axes: ["SOFT", "WONK", "opsz"],
+  axes: ["SOFT", "opsz"],
   variable: "--font-display",
   display: "swap",
 });

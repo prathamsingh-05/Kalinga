@@ -94,7 +94,7 @@ export function OrderForm({ initialFlavor }: Props) {
         website: "",
         payment_method: "email",
       });
-      setQty({});
+      setQty({} as Record<QtyKey, number>);
     } catch (err: any) {
       setStatus({ kind: "error", message: err.message ?? "Something went wrong" });
     }
