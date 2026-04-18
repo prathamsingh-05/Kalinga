@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Shipping & Returns — Kalinga Honey",
+  title: "Shipping & Returns — Kalinga",
   description:
-    "How we ship Kalinga Honey and how we handle damaged or missing items.",
+    "How we ship Kalinga honey and how we handle damaged or missing items.",
 };
 
 export default function ShippingPage() {

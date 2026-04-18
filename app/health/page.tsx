@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Health & Nutrition — Kalinga Honey",
+  title: "Health & Nutrition — Kalinga",
   description:
     "Nutritional profile, traditional uses, and responsible consumption of raw honey.",
 };

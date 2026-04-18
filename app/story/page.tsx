@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Our Story — Kalinga Honey",
+  title: "Our Story — Kalinga",
   description:
-    "How Kalinga Honey is naturally sourced from the forests of Odisha, in partnership with tribal self-help groups.",
+    "How Kalinga sources its honey naturally from the forests of Odisha, in partnership with tribal self-help groups.",
 };
 
 export default function StoryPage() {
@@ -15,7 +15,7 @@ export default function StoryPage() {
           A jar of honey, <span className="italic gold-text">and a forest behind it.</span>
         </h1>
         <p className="mt-8 text-cream/70 text-lg leading-relaxed max-w-3xl">
-          Kalinga Honey begins where most supply chains end — deep in the forest
+          Kalinga begins where most supply chains end — deep in the forest
           belts of Odisha, among tribal communities who have gathered wild
           honey for generations. We are not a factory. We are a bridge
           between that knowledge and your kitchen shelf.
@@ -69,7 +69,7 @@ export default function StoryPage() {
           </h2>
           <div className="space-y-5 mt-6 text-cream/75 leading-relaxed">
             <p>
-              Kalinga Honey works directly with tribal self-help groups (SHGs)
+              Kalinga works directly with tribal self-help groups (SHGs)
               across Odisha. These groups — often led by women — are the
               backbone of honey collection, quality control, and packaging in
               their regions.

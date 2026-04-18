@@ -26,9 +26,6 @@ export function Footer() {
           <div className="font-display text-3xl tracking-[0.18em] text-cream">
             KALINGA
           </div>
-          <div className="text-[10px] tracking-[0.5em] text-honey-200/70 mt-1">
-            HONEY
-          </div>
           <p className="mt-6 text-sm text-cream/70 leading-relaxed max-w-sm">
             Raw, single-origin honey from the forests of Odisha. Harvested with
             tribal self-help groups. No additives. No shortcuts.
@@ -79,7 +76,7 @@ export function Footer() {
       <div className="hairline" />
       <div className="max-w-7xl mx-auto px-6 lg:px-10 py-6 flex flex-col md:flex-row items-center justify-between gap-3">
         <div className="text-xs tracking-[0.22em] uppercase text-cream/50">
-          © {new Date().getFullYear()} Kalinga Honey · All rights reserved
+          © {new Date().getFullYear()} Kalinga · All rights reserved
         </div>
         <div className="flex items-center gap-5 text-xs tracking-[0.22em] uppercase">
           <Link href="/privacy" className="text-cream/60 hover:text-honey-200">Privacy</Link>

@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "FAQ — Kalinga Honey",
+  title: "FAQ — Kalinga",
   description:
-    "Common questions about Kalinga Honey — sourcing, authenticity, shipping, storage, and more.",
+    "Common questions about Kalinga — sourcing, authenticity, shipping, storage, and more.",
 };
 
 const SECTIONS = [
@@ -11,7 +11,7 @@ const SECTIONS = [
     title: "The Honey",
     items: [
       {
-        q: "Is Kalinga Honey raw?",
+        q: "Is Kalinga honey raw?",
         a: "Yes. We do not pasteurise or heat-process our honey. It is strained to remove wax and debris only, and bottled in small batches near the source.",
       },
       {
@@ -71,7 +71,7 @@ const SECTIONS = [
     items: [
       {
         q: "Who harvests your honey?",
-        a: "Kalinga Honey is sourced through tribal self-help groups (SHGs) across Odisha's forest belts. We buy directly at fair, transparent rates — no middlemen.",
+        a: "Our honey is sourced through tribal self-help groups (SHGs) across Odisha's forest belts. We buy directly at fair, transparent rates — no middlemen.",
       },
       {
         q: "Is harvesting sustainable?",

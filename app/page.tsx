@@ -7,7 +7,7 @@ export default function Home() {
       <section className="relative honeycomb-bg">
         <div className="max-w-7xl mx-auto px-6 lg:px-10 min-h-[88vh] flex flex-col justify-center">
           <div className="text-[10px] tracking-[0.6em] uppercase text-honey-200/70">
-            Kalinga Honey · Est. in the forests of Odisha
+            Kalinga · Est. in the forests of Odisha
           </div>
 
           <h1 className="mt-10 font-display text-[clamp(3.5rem,13vw,11rem)] leading-[0.92] tracking-tight">

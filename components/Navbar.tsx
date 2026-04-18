@@ -24,13 +24,8 @@ export function Navbar() {
       <div className="max-w-7xl mx-auto px-6 lg:px-10 h-20 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-3">
           <Logo />
-          <div className="leading-tight">
-            <div className="font-display text-2xl tracking-[0.18em] text-cream">
-              KALINGA
-            </div>
-            <div className="text-[10px] tracking-[0.5em] text-honey-200/70 -mt-1">
-              HONEY
-            </div>
+          <div className="font-display text-2xl tracking-[0.18em] text-cream leading-none">
+            KALINGA
           </div>
         </Link>
 

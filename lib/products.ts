@@ -67,7 +67,7 @@ export const INQUIRY_TYPES = [
   {
     id: "retailer",
     label: "Retailer",
-    hint: "Stock Kalinga Honey in your store, cafe, or deli.",
+    hint: "Stock Kalinga in your store, cafe, or deli.",
   },
   {
     id: "corporate",

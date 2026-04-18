@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Reviews & Testimonials — Kalinga Honey",
+  title: "Reviews & Testimonials — Kalinga",
   description:
-    "Customer reviews and testimonials for Kalinga Honey. Collected and published after our first 50 orders.",
+    "Customer reviews and testimonials for Kalinga. Collected and published after our first 50 orders.",
 };
 
 export default function ReviewsPage() {

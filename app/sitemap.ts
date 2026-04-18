@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const BASE = "https://kalingahoney.in"; // TODO: replace with real domain
+const BASE = "https://kalinga.in"; // TODO: replace with real domain
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const pages = [

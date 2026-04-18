@@ -1,7 +1,7 @@
 import { InquiryForm } from "@/components/InquiryForm";
 
 export const metadata = {
-  title: "Contact — Kalinga Honey",
+  title: "Contact — Kalinga",
   description:
     "Reach out — retail, corporate, events & gifting, or general. One form, four paths.",
 };

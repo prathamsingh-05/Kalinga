@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Socials — Kalinga Honey",
+  title: "Socials — Kalinga",
   description:
-    "Follow Kalinga Honey on Instagram, view our latest posts, and explore brand collaborations.",
+    "Follow Kalinga on Instagram, view our latest posts, and explore brand collaborations.",
 };
 
 const POSTS = Array.from({ length: 6 }, (_, i) => ({
@@ -53,7 +53,7 @@ export default function SocialsPage() {
               </div>
               <div className="p-5">
                 <div className="text-xs tracking-[0.28em] uppercase text-honey-200/70">
-                  @kalingahoney · TBA
+                  @kalinga · TBA
                 </div>
                 <p className="mt-2 text-cream/75 text-sm">{p.caption}</p>
               </div>

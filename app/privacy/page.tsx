@@ -1,7 +1,7 @@
 export const metadata = {
-  title: "Privacy Policy — Kalinga Honey",
+  title: "Privacy Policy — Kalinga",
   description:
-    "How Kalinga Honey collects, uses, and protects your personal information.",
+    "How Kalinga collects, uses, and protects your personal information.",
 };
 
 export default function PrivacyPage() {

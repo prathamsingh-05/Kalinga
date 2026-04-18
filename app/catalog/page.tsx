@@ -2,7 +2,7 @@ import Link from "next/link";
 import { FLAVORS, SIZES } from "@/lib/products";
 
 export const metadata = {
-  title: "Catalog — Kalinga Honey",
+  title: "Catalog — Kalinga",
   description:
     "Single-origin honey from Odisha — Tulsi, Jamun, Ginger, Multi-Flora. 250ml, 500ml, 1L.",
 };

@@ -1,8 +1,8 @@
 import { OrderForm } from "@/components/OrderForm";
 
 export const metadata = {
-  title: "Order — Kalinga Honey",
-  description: "Place your order for Kalinga Honey. 250ml / 500ml / 1L.",
+  title: "Order — Kalinga",
+  description: "Place your order for Kalinga honey. 250ml / 500ml / 1L.",
 };
 
 export default function OrderPage({

@@ -1,6 +1,6 @@
-# Kalinga Honey
+# Kalinga
 
-A full-stack website for **Kalinga Honey** — a premium, naturally sourced honey brand from Odisha.
+A full-stack website for **Kalinga** — a premium, naturally sourced honey brand from Odisha.
 
 Built with **Next.js 14 (App Router)**, **TypeScript**, **Tailwind CSS**, **SQLite (better-sqlite3)**, and **Zod**.
 
